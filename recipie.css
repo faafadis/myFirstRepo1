@@ -1,0 +1,37 @@
+body{
+    margin-left: 70px;
+    margin-right: 70px;
+    background-image: url(/image/silverware.jpg);
+  }
+  h1  {
+      color: green;
+      background-color: gray;
+      text-decoration: underline;
+      
+    
+    text-align: center;
+    letter-spacing: 0.25em;
+      color:#a4a400;
+      background-color:#F0F0F0;
+   text-decoration: underline;
+  }
+  h2  {
+    letter-spacing: 0.25em;
+      color:#a4a400;
+      background-color:#F0F0F0;
+   text-decoration: underline;
+  }
+   
+  .time-req{list-style-type:none;
+    text-indent: -2em;
+  }
+  em{
+    font-weight: bold;
+  }
+  pre.yellow{
+    background-color:  #ffffa8;;
+    
+  }
+  .dot{
+    list-style-image: url(/image/pie_icon.gif);
+  }
