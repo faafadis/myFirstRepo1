@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(73, 139, 73);
+}
+.blueheaders{
+    color: lightblue;
+}
+p,span, li{color:  white;}
+ p strong{
+    color: yellow;
+}
+a{color: darkred;}
+
+
+.photo{
+    width:257px;
+    height:196px;
+}
+
+#photo1{
+    width:180px;
+}
