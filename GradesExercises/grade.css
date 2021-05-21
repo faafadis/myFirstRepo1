@@ -1,0 +1,30 @@
+body{
+  
+    background-image: url(grade-background.JPG);
+}
+
+form{
+  
+    display: flex;
+justify-content:center;
+}
+fieldset{
+
+    background-color: rgb(191, 189, 194);
+    width: 33%;
+}
+legend{
+    font-size: 35px;
+}
+.deepform{
+    display: flex;
+    justify-content:  center;
+    flex-direction: column;
+}
+input[type="submit"]{
+    width: 190px;
+}
+label{
+    margin-bottom: 20px;
+}
+ 
