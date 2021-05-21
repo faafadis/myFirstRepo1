@@ -1,0 +1,55 @@
+
+ body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ section, fieldset{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+}
+fieldset{
+    display: flex;
+    flex-direction: row;
+
+    background-color: lightblue;
+    margin-bottom: 20px;
+    width: 500px;
+
+}
+note{
+    width: 500px;
+}
+ input[ name="signup"]{
+     width:100px
+ }
+ img{
+     vertical-align:middle;
+     border-style: unset;
+     width: 45px;
+     height: 45px;
+ }
+ header img{
+     width: 150px;
+ }
+ .right{
+     display: flex;
+     flex-direction: column;
+ }
+ .left{
+    display: flex;
+    flex-direction: column;
+   
+}
+.left>*{
+    margin-bottom: 10px;
+}
+.right>*{
+    margin-bottom: 4px;
+}
+span{
+    color: green;
+}
