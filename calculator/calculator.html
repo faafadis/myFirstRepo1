@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIP CALCULATER</title>
+    <style>
+         body{
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+         }
+         
+        .cal{
+        display: flex;
+        flex-direction: column;
+       border: 20px blueviolet solid ;
+       width: 30%;
+       justify-content: center;
+       margin: auto;
+        }
+       #submit{
+            width:200px;
+
+        }
+        .cal, #submit, label ,h1 {
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        hr{
+            height: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+   <div class="cal">
+    <h1>Tip Calculator</h1>
+       <img src="callulator.PNG" alt="" >
+    <label> <input id="subtotal" type="text"> subtotal</label>
+    <label> <input id="percent" type="text"> %</label>
+   <input  id= "submit" type="button"  value="submit" onclick= "result();" > 
+     <br>
+     <hr/>
+    <h1 id="result" > </h1>
+
+    <br>
+   </div>
+  
+   <script src="calculator.js"></script> 
+</body>
+</html>
