@@ -1,0 +1,81 @@
+body{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+    background-color:#CCCCFF;
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-weight:bold;
+
+    
+}
+.outer{
+    margin: 0;
+    width: 70%;
+    padding: auto;
+    border: black 10px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+   
+}
+.heart{
+    margin-top:0 ;
+    padding-top: 0;
+    float: left;
+    
+}
+#heart{
+    margin-top: 0;
+    padding-top: 0;
+    height: 50px;
+    width: 50px;
+}
+
+.h1{
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 32pt;
+    font-weight:bold;
+   text-align: center;
+} 
+textarea{
+    width: 90%;
+    height: 400px;
+   margin: auto;
+   font-family: monospace;
+   font-size: 12pt;
+   font-weight:bold;
+    
+}
+.control fieldset{
+    border: black 5px solid;
+}
+.control{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.control fieldset > legend{
+    /* width: 100px; */
+    font-weight: bold;
+}
+
+footer #validation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#validation{
+    float: right;
+}
