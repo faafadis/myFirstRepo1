@@ -29,65 +29,52 @@ Answers:
                                   9             
             document.write(b); -> 10
             document.write(x); -> 1
-            
-2. What is the difference between a method and function?
-JavaScript Function	JavaScript Methods
-Block of codes that performs specific tasks	Property of an object that contains function definition
-Function can pass the data that is operaated and may returned the data	Method operates data that contained in a class
-Function can be called by its name	A method consists of a code that can be called by the name of its object and its method name using dot notation or square bracket notation..
-                        function fun(parameters) {
-                            // Content
-                        }
-                        fun(); // function call
-                    
-                            var student = {
-                                fullname : function() {
-                                    // Content
-                                }
-                            };
-                            
-                            student.fullname() // method call
-                        
-3.What does 'this' refer to when used in a Java method?
 
-This : refers to te current object in a method or in a constructor.
+2. What is the difference between a method and function? 
 
-4. What does 'this' refer to when used in a JavaScript method?
+		Answer  ==> Functions  in javascript are the equivalent  of methods in java  both of them represent the behavior of  an object  Functions are treated as first class citizens  in javascript which makes it a functional programming
 
-This : it has different values depending on where it is used:
-IN METHOD: It refers to owner object
-ALONE: It refers to global object
-IN A FUCNTION: It refers to global object
-IN AN EVENT: It refers to the element that recieved the event.
+3. What does 'this' refer to when used in a Java method? 
+
+		Answer  ==>. This refers to the class in java.
+
+4. What does 'this' refer to when used in a JavaScript method? 
+
+		Answer  ==>     This refers to the object the function is used
+
+
+
 
 5.What does 'this' refer to when used in a JavaScript constructor function?
 
 The value of this, when used in an object, is the object itself.
 In a constructor function this does not have a value. It is a substitute for the new object. The value of this will become the new object when a new object is created.
+6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'. When f is called by x.f( ), what does 'this' refer to? 
 
-6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'. When f is called by x.f( ), what does 'this' refer to?
-This - referes to X
-7.What is a free variable in JavaScript?
-Free Varaible: A vraible that refered to a function that neither it's parameters nor local variable
-There are lexical scope where a closure is created and free variale is used in javascript.
+		 Answer  ==>   “this” is referring  to the object it belongs right now which is y
+
+7. What is a free variable in JavaScript? 
+
+		 Answer  ==>    A free variable is a variable in inner class that is not a local variable or a parameter to the inner nor a global variable but it  is a parameter or local variable of the inclosing  parent function  which is binded with the inner function.
+
 
 8.Create an object that has properties with name = "fred" and major="music" and a property that is a function that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.
-                var aObj = {
-                    name : "fred",
-                    major: "music",
-                    smallestOfTwo: function(a,b){
-                        if(a>b){
-                            return b;
-                        }
-                        else if(a==b){
-                            return a*a;
-                        }
-                        else{
-                            return a;
-                        }
-                    }
-                
-                }
+                 Answer  ==>  
+Var x = { 
+	“Name” :“fred”,
+	“Major”: “music”,
+	function ( a,b){
+				if(a>b){
+					return b;
+				}
+				else if(a=b){
+						return ((a*a)+(b*b));
+						}
+
+				return a;		
+			}
+	}
+
             
 9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function. Employee objects have the following fields: name, salary, position.
                 function Employee(name, salary, position) {
@@ -95,9 +82,9 @@ There are lexical scope where a closure is created and free variale is used in j
                     this.salary = salary;
                     this.position = position;   
                 }
-                var emp1 = new Employee("Helu", 5000, "Software-Developer");
-                var emp2 = new Employee("Asli", 3000, "Junior-Developer");
-                var emp3 = new Employee("Ruti", 9000, "Manager");
+                var emp1 = new Employee("fili", 5000, "Software-Developer");
+                var emp2 = new Employee("edu", 3000, "Junior-Developer");
+                var emp3 = new Employee("Rufi", 9000, "Manager");
             
 10. Write a Javascript function that takes any number of input arguments and returns the product of the arguments.
                 function product(x, y, ...more) {
