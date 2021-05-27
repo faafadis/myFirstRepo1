@@ -19,7 +19,20 @@ Javascript Module Exercises
 	document.write(b); // => 10
 	document.write(x);  // => 1
 
+	 Answer ==>
+	 undefined
+	 8
+	 8
+	 9
+	 10
+	 1
+
 2.  Define Global Scope and Local Scope in Javascript. 
+
+
+	 Answer ==>
+
+
 	- Global scope is global environment for functions, vars, etc. 
 	- Local Scope is scope inside the function including nested variables, objects, methods, etc.
  
@@ -33,18 +46,21 @@ Javascript Module Exercises
 		};  
 	}; 
  
-(a) Do statements in Scope A have access to variables defined in Scope B and C? 
+(A) Do statements in Scope A have access to variables defined in Scope B and C? 
 	=> No
-(b) Do statements in Scope B have access to variables defined in Scope A? 
+(B) Do statements in Scope B have access to variables defined in Scope A? 
 	=> Yes
-(c) Do statements in Scope B have access to variables defined in Scope C? 
+(C) Do statements in Scope B have access to variables defined in Scope C? 
 	=> No
-(d) Do statements in Scope C have access to variables defined in Scope A? 
+(D) Do statements in Scope C have access to variables defined in Scope A? 
 	=> Yes
-(e) Do statements in Scope C have access to variables defined in Scope B? 
+(E) Do statements in Scope C have access to variables defined in Scope B? 
  	=> Yes.
 
 4. What will be printed by the following (answer without running it)? 
+
+Answer ==>
+
 var x = 9; 
 function myFunction() {     
 	return x * x; 
@@ -63,11 +79,13 @@ function bar() {
 } 
 bar(); 
 
-What will the alert print out? (Answer without running the code.  Remember ‘hoisting’.)? 
-=>The alert print out 10
+What will the alert print out? (Answer without running the code.  Remember ‘hoisting’.)?
+
+	 Answer ==>  The alert print out 10
  
 6.  Consider the following definition of an add( ) function to increment a counter variable: 
-var add = (function () {     
+  Ansewr ==>
+   var add = (function () {     
 	var counter = 0;     
 	return function () {   
 		return counter += 1;   
@@ -85,15 +103,16 @@ var count = (function () {
 		return counter = 0;
 	}
 	return{
-		add: add,
-		reset: reset
+		add: add(),
+		reset: reset()
 	}
 })();
  
 7.  In the definition of add( ) shown in question 6, identify the "free" variable. In the context of a function closure, what is a "free" variable? 
 => A variable referred to by a function that is not one parameters of its or local variables.
  
-8.  The add( ) function defined in question 6 always adds 1 to the counter each time it is  called. Write a definition of a function make_adder(inc), whose return value is an add function with increment value inc (instead of 1). Here is an example of using this function: 
+8.  The add( ) function defined in question 6 always adds 1 to the counter each time it is  called.
+ Write a definition of a function make_adder(inc), whose return value is an add function with increment value inc (instead of 1). Here is an example of using this function: 
 
 add5 = make_adder(5); 
 add5( );   
@@ -185,13 +204,13 @@ var Module = (function(){
 	//locally scope object
 	let Employee = {};
 		Employee .setAge = function (newAge){ age = newAge;},
-		Employee .setAge = function (newSalary){salary = newSalary;},
-		Employee .setAge = function (newName){name = newName;},
-		Employee .setAge = function (percentage){  
+		Employee .setSalary = function (newSalary){salary = newSalary;},
+		Employee .setName = function (newName){name = newName;},
+		Employee .increaseSalary = function (percentage){  
 			let newSalary = getSalary() + (getSalary()*percentage);
 			setSalary(newSalary);
 		},
-		Employee .setAge = function ( ){ 
+		Employee .incrementAge = function ( ){ 
 			let newAge = getAge()+1;
 			setAge(newAge);
 		}
