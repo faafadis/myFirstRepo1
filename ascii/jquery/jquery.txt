@@ -2,7 +2,9 @@
                                                  jQuery Quiz I 
                                                  
 1.	In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”? 
+
 ANSWER=>
+
 JQuery function :-  is the function that wrap DOM element to enhhance thier performance by using jquery library.
 JQuery object :- is the object returned by the jquery function and represents set of document elements.
 
@@ -11,6 +13,7 @@ JQuery object :- is the object returned by the jquery function and represents se
 
 
 ANSWER=>
+
 <script>
 $(div h1).css({“background-color”:”red”});
 </script>
