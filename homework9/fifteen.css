@@ -49,7 +49,7 @@ body, button {
 
 /*
 init = function() {
-    var puzzleArea = document.getElementById('puzzlearea');
+    var xpuzzleArea = document.getElementById('puzzlearea');
     var divs = puzzleArea.getElementsByTagName("div");
       
     // initialize each piece
