@@ -2,7 +2,8 @@ var http = require('http');
 var url = require('url');
 var fs = require('fs');
 var addmod = require('./add2.js');
-http.createServer(function (req, res) { var q = url.parse(req.url, true);
+http.createServer(function (req, res) {
+   var q = url.parse(req.url, true);
 var filename = "." + q.pathname;
 if (q.pathname=="/add2.js")
 addmod.add(req,res,q.query)

@@ -5,7 +5,7 @@
 // //    {
 // //     host: "localhost",
 // //     user: "root",
-// //     password: "sawasawaA1",
+// //     password: "",
 // //     database: "filmon",
 // //     port: "3306"
 // //    }
@@ -50,7 +50,7 @@
 // var con = mysql.createConnection({
 //   host: "localhost",
 //   user: "root",
-//   password: "sawasawaA1"
+//   password: ""
 // });
 
 // con.connect(function(err) {
@@ -68,7 +68,7 @@ var mysql = require('mysql');
 var con = mysql.createConnection({
     host: "localhost",
     user: "myusername",
-    password: "mypassword",
+    password: "",
     database: "mydb"
   });
   
